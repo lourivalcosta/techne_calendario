@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel="stylesheet" type="text/css" href="calendario.css">
+        <title>Techne. Segunda fase</title>
+    </head>
+    <body>
+        <div id="calendar">
+            <!-- Template TIME GRID -->
+            <script type="text/html" id="time_grid_tmpl">
+                <ul>
+                    <% for ( var i = 0; i < hours.length; i++ ) { %>
+                        <li>
+                            <div class="format">
+                                <% if (hours[i].minutes != "30") { %>
+                                    <span class="bold"><%=hours[i].hours%>:<%=hours[i].minutes%></span>
+                                    <span class="thinletter"><%=hours[i].period%></span>
+                                <% } else { %>
+                                    <span class="thinletter"><%=hours[i].hours%>:<%=hours[i].minutes%></span>
+                                <% } %>
+                            </div>
+                        </li>
+                    <% } %>
+                </ul>
+            </script>
+            <!-- Template TIME GRID -->
+            <!-- Template start:EVENTS GRID -->
+            <script type="text/html" id="events_grid_tmpl">
+                <div id="<%=id%>" class="event-item"> 
+                    <div class="event-content"> 
+                        <div class="title bold">           
+                           Titulo
+                        </div>
+                        <div class="location thinletter">           
+                            Local
+                        </div>
+                    </div>
+                </div>
+            </script>
+            <!-- Template EVENTS GRID -->
+            <div id="time-grid" class="time-grid">
+            </div>
+            <div  class="events-grid">
+                <div id="events-grid">
+                </div>
+            </div>
+        </div>
+        	<script type="text/javascript" src="calendario.js"></script>
+    </body>
+</html>

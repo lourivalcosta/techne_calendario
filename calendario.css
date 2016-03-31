@@ -1,0 +1,53 @@
+#calendar {
+               overflow: hidden;
+               font-family: "Lucida Sans Unicode","Lucida Grande",Garuda,sans-serif;;
+               color: #686868;
+               font-size: 12px;
+               width: 700px;
+            }
+            #calendar .bold { font-weight: bold; }
+            #calendar .title { color: #4166A4; }
+            #calendar .thinletter {
+                font-size: 10px;
+                color : #A6A6A6;                        
+            }  
+            #calendar .time-grid {
+                width: 79px;
+                float: left;
+                overflow: hidden;
+            }
+            #calendar .time-grid ul {
+                padding: 0;
+                margin: 0;
+                text-align: right;
+                margin-right: 10px;
+                list-style: none;
+            }
+            #calendar .time-grid li {
+                height: 30px;
+                overflow: hidden;
+            }
+            #calendar .time-grid li div.format { margin-top: 7px; }
+            #calendar .time-grid li div.format span{ margin-left: 4px;}    
+            #calendar .events-grid {
+                margin-top: 15px;
+                width: 600px;
+                height: 720px;
+                padding: 0 10px 0 10px;
+                background-color: #ECECEC;
+                border-left: 1px solid #D6D6D6;
+                float: left;
+                overflow: hidden;
+                position: relative;
+            }
+            #calendar .event-item {
+                position: absolute;
+                overflow: hidden;
+            }
+            #calendar .event-item .event-content{
+                height:100%;
+                border: 1px solid  #D6D6D6;
+                border-left: 3px solid #4166A4;
+                background-color: white;
+                padding: 10px 0 0 10px;   
+            }
